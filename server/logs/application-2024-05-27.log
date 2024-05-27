@@ -1,0 +1,138 @@
+[32m2024-05-27T18:36:55.451Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:36:55.453Z info: chatSocket initialized[39m
+[32m2024-05-27T18:36:55.453Z info: App initialized[39m
+[32m2024-05-27T18:36:55.454Z info: Server running on port 3000[39m
+[32m2024-05-27T18:37:24.098Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:37:24.100Z info: chatSocket initialized[39m
+[32m2024-05-27T18:37:24.100Z info: App initialized[39m
+[32m2024-05-27T18:37:24.101Z info: Server running on port 3000[39m
+[32m2024-05-27T18:37:37.502Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:37:37.504Z info: chatSocket initialized[39m
+[32m2024-05-27T18:37:37.504Z info: App initialized[39m
+[32m2024-05-27T18:37:37.505Z info: Server running on port 3000[39m
+[32m2024-05-27T18:37:55.505Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:37:55.508Z info: chatSocket initialized[39m
+[32m2024-05-27T18:37:55.508Z info: App initialized[39m
+[32m2024-05-27T18:37:55.509Z info: Server running on port 3000[39m
+[32m2024-05-27T18:40:36.940Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-27T18:40:36.950Z info: Messages retrieved successfully[39m
+[32m2024-05-27T18:40:43.136Z info: Incoming Request: POST /api/chat/messages[39m
+[33m2024-05-27T18:40:43.137Z warn: Invalid message data: Hello, everyone![39m
+[32m2024-05-27T18:43:45.485Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:43:45.487Z info: chatSocket initialized[39m
+[32m2024-05-27T18:43:45.487Z info: App initialized[39m
+[32m2024-05-27T18:43:45.488Z info: Server running on port 3000[39m
+[32m2024-05-27T18:43:51.634Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:43:51.636Z info: chatSocket initialized[39m
+[32m2024-05-27T18:43:51.636Z info: App initialized[39m
+[32m2024-05-27T18:43:51.637Z info: Server running on port 3000[39m
+[32m2024-05-27T18:44:07.682Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:44:07.684Z info: chatSocket initialized[39m
+[32m2024-05-27T18:44:07.684Z info: App initialized[39m
+[32m2024-05-27T18:44:07.685Z info: Server running on port 3000[39m
+[32m2024-05-27T18:44:31.599Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:44:31.601Z info: chatSocket initialized[39m
+[32m2024-05-27T18:44:31.601Z info: App initialized[39m
+[32m2024-05-27T18:44:31.602Z info: Server running on port 3000[39m
+[32m2024-05-27T18:44:59.419Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:46:25.939Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:46:25.940Z info: chatSocket initialized[39m
+[32m2024-05-27T18:46:25.941Z info: App initialized[39m
+[32m2024-05-27T18:46:25.941Z info: Server running on port 3000[39m
+[32m2024-05-27T18:46:41.927Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:46:54.079Z info: MongoDB connected successfully[39m
+[32m2024-05-27T18:46:54.080Z info: chatSocket initialized[39m
+[32m2024-05-27T18:46:54.081Z info: App initialized[39m
+[32m2024-05-27T18:46:54.081Z info: Server running on port 3000[39m
+[32m2024-05-27T19:00:12.478Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-27T19:00:12.487Z info: Messages retrieved successfully[39m
+[32m2024-05-27T19:00:23.134Z info: Incoming Request: POST /api/users[39m
+[32m2024-05-27T19:00:23.145Z info: User created successfully[39m
+[32m2024-05-27T19:00:42.398Z info: Incoming Request: POST /api/chat/messages[39m
+[33m2024-05-27T19:00:42.399Z warn: Invalid message data: Hello, everyone![39m
+[32m2024-05-27T19:01:33.776Z info: Incoming Request: POST /api/chat/messages[39m
+[32m2024-05-27T19:01:33.783Z info: Message created successfully[39m
+[32m2024-05-27T19:02:37.713Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-27T19:02:37.728Z info: Messages retrieved successfully[39m
+[32m2024-05-27T19:04:25.567Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:04:32.384Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:04:32.386Z info: chatSocket initialized[39m
+[32m2024-05-27T19:04:32.386Z info: App initialized[39m
+[32m2024-05-27T19:04:32.387Z info: Server running on port 3000[39m
+[32m2024-05-27T19:04:48.500Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-27T19:04:48.513Z info: Messages retrieved successfully[39m
+[32m2024-05-27T19:04:58.349Z info: Incoming Request: POST /api/chat/messages[39m
+[32m2024-05-27T19:04:58.355Z info: Message created successfully[39m
+[32m2024-05-27T19:05:01.794Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-27T19:05:01.802Z info: Messages retrieved successfully[39m
+[32m2024-05-27T19:05:28.085Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:05:28.087Z info: chatSocket initialized[39m
+[32m2024-05-27T19:05:28.087Z info: App initialized[39m
+[32m2024-05-27T19:05:28.088Z info: Server running on port 3000[39m
+[32m2024-05-27T19:06:02.591Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:06:02.593Z info: chatSocket initialized[39m
+[32m2024-05-27T19:06:02.594Z info: App initialized[39m
+[32m2024-05-27T19:06:02.594Z info: Server running on port 3000[39m
+[32m2024-05-27T19:06:14.192Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:06:14.195Z info: chatSocket initialized[39m
+[32m2024-05-27T19:06:14.195Z info: App initialized[39m
+[32m2024-05-27T19:06:14.195Z info: Server running on port 3000[39m
+[32m2024-05-27T19:06:20.955Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:06:20.957Z info: chatSocket initialized[39m
+[32m2024-05-27T19:06:20.957Z info: App initialized[39m
+[32m2024-05-27T19:06:20.958Z info: Server running on port 3000[39m
+[32m2024-05-27T19:06:27.610Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:06:27.612Z info: chatSocket initialized[39m
+[32m2024-05-27T19:06:27.612Z info: App initialized[39m
+[32m2024-05-27T19:06:27.613Z info: Server running on port 3000[39m
+[32m2024-05-27T19:06:34.020Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:06:34.022Z info: chatSocket initialized[39m
+[32m2024-05-27T19:06:34.022Z info: App initialized[39m
+[32m2024-05-27T19:06:34.023Z info: Server running on port 3000[39m
+[32m2024-05-27T19:06:40.214Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:06:40.216Z info: chatSocket initialized[39m
+[32m2024-05-27T19:06:40.216Z info: App initialized[39m
+[32m2024-05-27T19:06:40.217Z info: Server running on port 3000[39m
+[32m2024-05-27T19:06:52.017Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:06:52.019Z info: chatSocket initialized[39m
+[32m2024-05-27T19:06:52.019Z info: App initialized[39m
+[32m2024-05-27T19:06:52.020Z info: Server running on port 3000[39m
+[32m2024-05-27T19:06:53.196Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:06:53.199Z info: chatSocket initialized[39m
+[32m2024-05-27T19:06:53.199Z info: App initialized[39m
+[32m2024-05-27T19:06:53.199Z info: Server running on port 3000[39m
+[32m2024-05-27T19:15:55.418Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:15:55.420Z info: chatSocket initialized[39m
+[32m2024-05-27T19:15:55.420Z info: App initialized[39m
+[32m2024-05-27T19:15:55.421Z info: Server running on port 3000[39m
+[32m2024-05-27T19:36:08.063Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:36:08.065Z info: chatSocket initialized[39m
+[32m2024-05-27T19:36:08.065Z info: App initialized[39m
+[32m2024-05-27T19:36:08.065Z info: Server running on port 3000[39m
+[32m2024-05-27T19:36:11.439Z info: Incoming Request: OPTIONS /api/users[39m
+[32m2024-05-27T19:36:13.385Z info: Incoming Request: OPTIONS /api/users[39m
+[32m2024-05-27T19:36:16.840Z info: Incoming Request: OPTIONS /api/chat/messages[39m
+[32m2024-05-27T19:36:39.198Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-27T19:36:39.217Z info: Messages retrieved successfully[39m
+[32m2024-05-27T19:36:40.194Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-27T19:36:40.203Z info: Messages retrieved successfully[39m
+[32m2024-05-27T19:36:40.900Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-27T19:36:40.906Z info: Messages retrieved successfully[39m
+[32m2024-05-27T19:36:41.671Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-27T19:36:41.677Z info: Messages retrieved successfully[39m
+[32m2024-05-27T19:37:46.694Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:37:46.696Z info: chatSocket initialized[39m
+[32m2024-05-27T19:37:46.696Z info: App initialized[39m
+[32m2024-05-27T19:37:46.697Z info: Server running on port 3000[39m
+[32m2024-05-27T19:37:51.929Z info: Incoming Request: OPTIONS /api/chat/messages[39m
+[34m2024-05-27T19:37:51.929Z debug: Body: [object Object] [39m
+[32m2024-05-27T19:38:07.967Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:38:07.969Z info: chatSocket initialized[39m
+[32m2024-05-27T19:38:07.970Z info: App initialized[39m
+[32m2024-05-27T19:38:07.970Z info: Server running on port 3000[39m
+[32m2024-05-27T19:38:12.353Z info: Incoming Request: OPTIONS /api/chat/messages[39m
+[34m2024-05-27T19:38:12.354Z debug: Body: {} [39m
+[32m2024-05-27T19:39:08.481Z info: MongoDB connected successfully[39m
+[32m2024-05-27T19:39:08.482Z info: chatSocket initialized[39m
+[32m2024-05-27T19:39:08.483Z info: App initialized[39m
+[32m2024-05-27T19:39:08.483Z info: Server running on port 3000[39m
