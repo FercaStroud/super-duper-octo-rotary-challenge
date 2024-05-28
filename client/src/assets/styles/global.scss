@@ -1,0 +1,95 @@
+@import "variables";
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @extend .color-background;
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+}
+
+
+h1 {
+  margin-bottom: 24px;
+  @extend .color-primary;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 1em;
+  @extend .color-text;
+  width: 100%;
+  text-align: left;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 14px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: $input-border-radius;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.2em;
+  @extend .color-white;
+  background-color: $primary-color;
+  border: none;
+  border-radius: $button-border-radius;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px;
+
+}
+
+.container {
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+  @extend .color-container-bg;
+  padding: 30px $padding;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin-top: 100px;
+}

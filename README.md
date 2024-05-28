@@ -14,12 +14,17 @@ This project is a chat server built with Node.js, Express, MongoDB, and Socket.I
 
     ```bash
     git clone https://github.com/fercastroud/super-duper-octo-rotary-challenge.git
-    cd super-duper-octo-rotary-challenge/server
+    cd super-duper-octo-rotary-challenge
     ```
 
-2. Install the dependencies:
+2. Install the dependencies (server and client folders):
 
     ```bash
+    cd super-duper-octo-rotary-challenge/server
+    npm install
+    ```
+    ```bash 
+    cd super-duper-octo-rotary-challenge/client
     npm install
     ```
 
@@ -27,16 +32,15 @@ This project is a chat server built with Node.js, Express, MongoDB, and Socket.I
 
     ```env
     PORT=3000
-    MONGO_URI=mongodb://localhost:27017/your-database-name
+    MONGO_URI=mongodb://localhost:27017/chatApp
+    ```
+   
+4. Create a `.env` file in the root of the `client` directory with the following content:
+
+    ```env
+    VITE_API_URL=http://localhost:3000
     ```
 
-   Replace `mongodb://localhost:27017/your-database-name` with your actual MongoDB connection URI.
-
-4. Ensure MongoDB is running. If you're running MongoDB locally, you can start it with:
-
-    ```bash
-    mongod
-    ```
 
 ## Running the Server
 
@@ -55,65 +59,70 @@ This project is a chat server built with Node.js, Express, MongoDB, and Socket.I
 
 3. The server is now running on `http://localhost:3000`.
 
-## API Endpoints
+## Running the Client
 
-### Get All Messages
+1. Start the client:
 
+    ```bash
+    npm run dev
+    ```
+
+2. The server is now running on `http://localhost:5173/`.
+
+
+# API calls
+### 1. Create User
+
+#### Request
+
+- **Method:** POST
+- **URL:** `/api/users`
+- **Headers:**
+    - `Content-Type: application/json`
+- **Body:**
+
+```json
+{
+  "name": "Ferca"
+}
+```
+
+
+### 2. Create Message
+
+#### Request
+
+- **Method:** POST
 - **URL:** `/api/chat/messages`
-- **Method:** `GET`
-- **Response:**
-    ```json
-    [
-      {
-        "username": "alice",
-        "message": "Hello, everyone!",
-        "_id": "60d0fe4f5311236168a109ca",
-        "createdAt": "2024-05-23T23:47:24.024Z"
-      }
-    ]
-    ```
+- **Headers:**
+  - `Content-Type: application/json`
+- **Body:**
 
-### Create a Message
+```json
+{
+  "userId": "6654d8471ab6b918d36492c7",
+  "message": "Hello, this is a test message!"
+}
+```
+### 3. Get Messages
 
+#### Request
+
+- **Method:** GET
 - **URL:** `/api/chat/messages`
-- **Method:** `POST`
-- **Request Body:**
-    ```json
-    {
-      "username": "alice",
-      "message": "Hello, everyone!"
-    }
-    ```
+- **Headers:**
+  - `Content-Type: application/json`
 - **Response:**
-    ```json
-    {
-      "username": "alice",
-      "message": "Hello, everyone!",
-      "_id": "60d0fe4f5311236168a109ca",
-      "createdAt": "2024-05-23T23:47:24.024Z"
-    }
-    ```
 
-## WebSocket
+```json
+[
+  {
+    "id": "string",
+    "userId": "string",
+    "message": "string",
+    "timestamp": "string"
+  }
+]
 
-The server uses Socket.IO for real-time communication. To connect to the WebSocket server:
+```
 
-1. Connect to the WebSocket server at `ws://localhost:3000`.
-2. Emit a `sendMessage` event with the following payload:
-    ```json
-    {
-      "username": "alice",
-      "message": "Hello, everyone!"
-    }
-    ```
-3. Listen for `newMessage` events to receive messages in real time.
-
-## Development
-
-### Nodemon
-
-During development, you can use Nodemon to automatically restart the server when files change:
-
-```bash
-npm install -g nodemon
-nodemon server.js
