@@ -1,31 +1,39 @@
 <template>
   <div>
-    <header class="color-white bg-primary">
-      <strong class="color-white">All messages</strong>
-    </header>
-    <div>
-      <img class="avatar" src="https://avatar.iran.liara.run/public" alt="avatar"/>
-      <div>
-        <h2 class="color-primary">{{ user.name }}</h2>
-        <small>{{ user.id }}</small>
+    <div class="chat-container">
+      <div class="chat-header">
+        <img src="https://avatar.iran.liara.run/public" alt="avatar"/>
+        <h5 class="mb-0">
+          {{ user.name }}
+        </h5>
       </div>
-    </div>
-    <div class="container">
-      <div class="messenger">
-        <div class="message bubble" v-for="message in messages" :key="message.id" :class="message.user.id === user.id ? 'right' : 'left'">
-          <div class="">
-            <strong v-if="message.user.id !== user.id">{{ message.user.name }} </strong>
+      <div class="container">
+        <div class="row m-2">
+          <input type="text" class="form-control" placeholder="Search..." v-model="search">
+        </div>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="chat-message" v-for="message in filteredMessages" :key="message.id"
+             :class="message.user.id === user.id ? 'message-sent' : 'message-received'">
+          <div class="message-text">
+            <strong v-if="message.user.id !== user.id">
+              {{ message.user.name }}
+            </strong>
             {{ message.message }}
           </div>
         </div>
       </div>
+      <div class="chat-footer">
+        <form @submit.prevent="sendMessage">
+          <div class="input-group">
+            <input type="text" id="messageInput" class="form-control" placeholder="Type your message" v-model="newMessage">
+            <div class="input-group-append">
+              <button class="btn" id="sendButton" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <nav>
-      <form @submit.prevent="sendMessage">
-        <input type="text" v-model="newMessage" placeholder="Type your message" required/>
-        <button type="submit">Send</button>
-      </form>
-    </nav>
   </div>
 </template>
 
@@ -36,10 +44,19 @@ export default {
   data() {
     return {
       newMessage: '',
+      search: '',
     };
   },
   computed: {
     ...mapGetters(['messages', 'user']),
+    filteredMessages() {
+      const lowerCaseSearch = this.search.toLowerCase();
+
+      return this.messages.filter(message =>
+          message.message.toLowerCase().includes(lowerCaseSearch) ||
+          message.user.name.toLowerCase().includes(lowerCaseSearch)
+      );
+    },
   },
   methods: {
     sendMessage() {
@@ -59,64 +76,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/styles/global.scss";
-
-.container {
-  height: calc(100vh - 510px) !important;
-  overflow-y: scroll !important;
-  width: 80vw !important;
-  max-width: 100% !important;
+img {
+  height: 40px;
+  margin-right: 10px
 }
-
-nav {
-  width: 100%;
-  background-color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-form {
-  width: 100%;
-  max-width: 600px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.avatar {
-  height: 52px;
-  padding-right: 10px;
-  float: left;
-}
-
-.messenger {
-  display: flex !important;
-  flex-direction: column !important;
-}
-
-.message {
-  width: 200px;
-  margin: 10px;
-}
-
-.bubble {
-  padding: 10px;
-  border-radius: 15px;
-}
-
-.left {
-  background-color: #f0f0f0;
-  align-self: flex-start;
-}
-
-.right {
-  background-color: $primary-color;
-  align-self: flex-end;
-  color: white;
-}
-
 </style>

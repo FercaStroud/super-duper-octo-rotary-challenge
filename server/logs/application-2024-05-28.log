@@ -1,0 +1,70 @@
+[32m2024-05-28T19:30:20.697Z info: MongoDB connected successfully[39m
+[32m2024-05-28T19:30:20.699Z info: chatSocket initialized[39m
+[32m2024-05-28T19:30:20.699Z info: App initialized[39m
+[32m2024-05-28T19:30:20.700Z info: Server running on port 3000[39m
+[32m2024-05-28T19:39:08.590Z info: Incoming Request: OPTIONS /api/users[39m
+[32m2024-05-28T19:39:08.618Z info: Incoming Request: POST /api/users[39m
+[34m2024-05-28T19:39:08.619Z debug: Body: {"name":"Ferca"} [39m
+[32m2024-05-28T19:39:08.633Z info: User created successfully[39m
+[32m2024-05-28T19:39:08.662Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T19:39:08.679Z info: New client connected: I6V8algguADzwatVAAAB[39m
+[32m2024-05-28T19:39:08.681Z info: Messages retrieved successfully[39m
+[32m2024-05-28T19:41:25.510Z info: Client disconnected: I6V8algguADzwatVAAAB[39m
+[32m2024-05-28T19:41:43.438Z info: Incoming Request: OPTIONS /api/users[39m
+[32m2024-05-28T19:41:43.445Z info: Incoming Request: POST /api/users[39m
+[34m2024-05-28T19:41:43.446Z debug: Body: {"name":"Dolorem Ipsum"} [39m
+[32m2024-05-28T19:41:43.450Z info: User created successfully[39m
+[32m2024-05-28T19:41:43.478Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T19:41:43.484Z info: New client connected: wHrBUmrJrweKMexoAAAD[39m
+[32m2024-05-28T19:41:43.485Z info: Messages retrieved successfully[39m
+[32m2024-05-28T19:48:35.616Z info: Client disconnected: wHrBUmrJrweKMexoAAAD[39m
+[32m2024-05-28T19:48:35.689Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T19:48:35.705Z info: New client connected: 4dAVCdK8H1Tsv0CZAAAF[39m
+[32m2024-05-28T19:48:35.712Z info: Messages retrieved successfully[39m
+[32m2024-05-28T19:48:44.466Z info: Client disconnected: 4dAVCdK8H1Tsv0CZAAAF[39m
+[32m2024-05-28T19:48:44.611Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T19:48:44.618Z info: Messages retrieved successfully[39m
+[32m2024-05-28T19:48:44.637Z info: New client connected: N754q4Cci-t4QbSIAAAH[39m
+[32m2024-05-28T19:49:57.643Z info: Client disconnected: N754q4Cci-t4QbSIAAAH[39m
+[32m2024-05-28T19:49:57.794Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T19:49:57.804Z info: New client connected: YuHSqFxUSwIRmW2HAAAJ[39m
+[32m2024-05-28T19:49:57.840Z info: Messages retrieved successfully[39m
+[32m2024-05-28T19:50:56.562Z info: Incoming Request: OPTIONS /api/chat/messages[39m
+[32m2024-05-28T19:50:56.566Z info: Incoming Request: POST /api/chat/messages[39m
+[34m2024-05-28T19:50:56.567Z debug: Body: {"userId":"665633772ed8174514376f5d","message":"asdasdasdfsd"} [39m
+[32m2024-05-28T19:50:56.580Z info: Message created successfully[39m
+[32m2024-05-28T19:50:56.588Z info: Message sent by Dolorem Ipsum: asdasdasdfsd[39m
+[32m2024-05-28T19:51:21.691Z info: Client disconnected: YuHSqFxUSwIRmW2HAAAJ[39m
+[32m2024-05-28T19:53:43.550Z info: Incoming Request: OPTIONS /api/users[39m
+[32m2024-05-28T19:53:43.554Z info: Incoming Request: POST /api/users[39m
+[34m2024-05-28T19:53:43.555Z debug: Body: {"name":"Ferca"} [39m
+[32m2024-05-28T19:53:43.559Z info: User created successfully[39m
+[32m2024-05-28T19:53:43.589Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T19:53:43.598Z info: Messages retrieved successfully[39m
+[32m2024-05-28T19:53:43.603Z info: New client connected: PE0fmT8-_T2ewJ2TAAAL[39m
+[32m2024-05-28T19:53:47.221Z info: Incoming Request: OPTIONS /api/chat/messages[39m
+[32m2024-05-28T19:53:47.225Z info: Incoming Request: POST /api/chat/messages[39m
+[34m2024-05-28T19:53:47.225Z debug: Body: {"userId":"665636472ed8174514376f6d","message":"asdasd"} [39m
+[32m2024-05-28T19:53:47.233Z info: Message created successfully[39m
+[32m2024-05-28T19:53:47.243Z info: Message sent by Ferca: asdasd[39m
+[32m2024-05-28T19:55:03.842Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T19:55:03.846Z info: New client connected: OTy_LMI2GmS5kHyKAAAN[39m
+[32m2024-05-28T19:55:03.848Z info: Messages retrieved successfully[39m
+[32m2024-05-28T19:58:25.203Z info: Client disconnected: PE0fmT8-_T2ewJ2TAAAL[39m
+[32m2024-05-28T19:58:25.204Z info: Client disconnected: OTy_LMI2GmS5kHyKAAAN[39m
+[32m2024-05-28T19:58:25.279Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T19:58:25.287Z info: New client connected: Ga8DWlhYz0MhRcXyAAAP[39m
+[32m2024-05-28T19:58:25.289Z info: Messages retrieved successfully[39m
+[32m2024-05-28T19:58:34.266Z info: Client disconnected: Ga8DWlhYz0MhRcXyAAAP[39m
+[32m2024-05-28T19:58:34.455Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T19:58:34.463Z info: New client connected: rcvWkLC7aRJLgHYkAAAR[39m
+[32m2024-05-28T19:58:34.465Z info: Messages retrieved successfully[39m
+[32m2024-05-28T20:02:20.345Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T20:02:20.365Z info: New client connected: V25cX4R2SPVJcrFNAAAT[39m
+[32m2024-05-28T20:02:20.366Z info: Messages retrieved successfully[39m
+[32m2024-05-28T20:02:58.868Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T20:02:58.872Z info: New client connected: KiaNkyhG9V4odHGJAAAV[39m
+[32m2024-05-28T20:02:58.874Z info: Messages retrieved successfully[39m
+[32m2024-05-28T20:03:46.804Z info: Incoming Request: GET /api/chat/messages[39m
+[32m2024-05-28T20:03:46.808Z info: New client connected: I7ULeG6_IyCw1a_lAAAX[39m
+[32m2024-05-28T20:03:46.812Z info: Messages retrieved successfully[39m
